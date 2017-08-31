@@ -1,0 +1,33 @@
+Thu Jun 22 13:43:05 2017
+reading makeImage.inputs...
+------Using inputs specified in makeImage.inputs
+###################################################
+--------------Imaging Parameters-------------------
+{'Stokes': 'I', 'kernel_support': 15, 'kernel': 'wkernel', 'ff_size': 128, 'loopGain': 0.1, 'thresh': 1.0, 'over_sampling': 4, 'niter': 0, 'imageSize': 4096, 'cellsize': 5.0, 'wplanes': 1, 'nmajor': 1, 'tinc': 5.0, 'Acache': './Acache/'}
+###################################################
+###################################################
+--------------File Names-------------------
+{'wdir': './fits/', 'imagename': 'test_image', 'uvfitsfile': 'DVA1-noPB_12hrs_cent_noise.fitsidi'}
+###################################################
+Obtaining uvw coords, time and freq data
+Visibility data type =  FITSIDI
+Visibility data type =  FITSIDI
+getting Array info
+converting normal time to HA
+Visibility data type =  FITSIDI
+extracting polarisation visibilities
+no cleaning, generating dirty image
+--------------Gridding X stokes--------------------
+fov (degrees): 5.68888888889
+--------------Gridding Y stokes--------------------
+fov (degrees): 5.68888888889
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_dirtyimage.fits
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_dirtypsf.fits
+-------------PyImager appears to have ended successfully-----------------
+############# Time taken = 2.1326 mins #####################
+Thu Jun 22 13:45:13 2017
+TOTAL TIME IN MINUTES: 2.13260026773

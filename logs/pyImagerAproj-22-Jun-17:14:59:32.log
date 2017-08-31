@@ -1,0 +1,61 @@
+Thu Jun 22 14:59:37 2017
+reading makeImage.inputs...
+------Using inputs specified in makeImage.inputs
+###################################################
+--------------Imaging Parameters-------------------
+{'Stokes': 'I', 'kernel_support': 15, 'kernel': 'wkernel', 'ff_size': 128, 'loopGain': 0.1, 'thresh': 1.0, 'over_sampling': 4, 'niter': 10, 'imageSize': 4096, 'cellsize': 5.0, 'wplanes': 1, 'nmajor': 1, 'tinc': 5.0, 'Acache': './Acache/'}
+###################################################
+###################################################
+--------------File Names-------------------
+{'wdir': './fits/', 'imagename': 'test_image_majorcycle_pad_fft', 'uvfitsfile': 'DVA1-noPB_12hrs_cent_noise.fitsidi'}
+###################################################
+Obtaining uvw coords, time and freq data
+Visibility data type =  FITSIDI
+Visibility data type =  FITSIDI
+getting Array info
+converting normal time to HA
+Visibility data type =  FITSIDI
+extracting polarisation visibilities
+Doing CLEAN ...
+--------------Gridding X stokes--------------------
+fov (degrees): 5.68888888889
+--------------Gridding Y stokes--------------------
+fov (degrees): 5.68888888889
+---------Doing Major cycle 0 -----------------
+--------Doing 10 minor cleaning cycles
+The minor cycle threshold is peak residual * 0.117021
+Maximum residual = 1.999755, cleaning down to 0.234014
+-----peak flux in residual after minor cleaning = 0.697271
+--------------Gridding X stokes--------------------
+fov (degrees): 5.68888888889
+--------------Gridding Y stokes--------------------
+fov (degrees): 5.68888888889
+--------------Gridding X stokes--------------------
+fov (degrees): 5.68888888889
+--------------Gridding Y stokes--------------------
+fov (degrees): 5.68888888889
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+flux cleaned in this cycle = 1.3025
+total amplitude cleaned after major cycle 0 = 1.3025
+peak amplitude after major cycle 0 = 1.3025
+peak amplitude in FT[vis residuals] = 0.6968
+image rms after major cycle 0 = 0.0002119927 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_majorcycle_pad_fftI_image.fits
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_majorcycle_pad_fftI_residuals.fits
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_majorcycle_pad_fftI_image_res.fits
+getting fits header info
+Visibility data type =  FITSIDI
+Writing image file to: ./fits/test_image_majorcycle_pad_fft_dirtypsf.fits
+Image peak = 1.3024833156, and rms = 0.00252353583143
+Peak residuals = 0.893559038341, and residuals rms = 0.00183839828812
+-------------PyImager appears to have ended successfully-----------------
+############# Time taken = 12.5639 mins #####################
+Thu Jun 22 15:12:11 2017
+TOTAL TIME IN MINUTES: 12.5639042815

@@ -1,0 +1,34 @@
+#Imaging parameters for the python Imager
+
+Stokes 		= I	                                    # only I enabled at the moment
+imageSize 	= 4096 	                                # imageSize - number of pixels on a single side
+cellsize 	= 5.0 	                                # arcseconds
+niter		= 10	                                    # number of minor iterations 0 = dirty image; > 0 deconvolution
+nmajor		= 1		                                # number of major iterations
+loopGain	= 0.1
+threshold	= 1	                                    # threshold to stop cleaning, per minor cycle - not used
+
+##############################################################################
+
+uvfitsfile	= DVA1-noPB_12hrs_cent_noise.fitsidi	# input visibility fits file
+wdir	 	= ./fits/                               # Directory to write the images
+imagename   = test_image_pswf_clean                       # do not put the .fits suffix
+
+notes       = image test.     # brief notes on what this imaging was about.
+                                                    # e.g. what did you change and why is this one different from the others.
+
+##############################################################################
+
+kernel		= pswf                               # wkernel, awkernel, pswf
+wplanes 	= 1		                                # number of wplanes - not fully tested, but can work with any number of wplanes
+tinc		= 5 	                                # time increments in minutes to compute the Akernel (if kernel = awkernel)
+Acache		= ./Acache/                             # Akernel cache
+
+#############################################################################
+
+#Parameters that are not generally changed
+over_sampling 	= 4
+ff_size 	    = 128
+kernel_support 	= 3
+
+
